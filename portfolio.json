@@ -1,0 +1,38 @@
+[
+  {
+    "type": "Логотип",
+    "title": "Сервис ОКО — наблюдение за командой",
+    "image": "portfolio/oko-logo.jpg",
+    "placeholder": "OKO"
+  },
+  {
+    "type": "Упаковка Telegram",
+    "title": "Канал про инвестиции — строгий минимализм",
+    "image": "portfolio/invest-tg.jpg",
+    "placeholder": "TG"
+  },
+  {
+    "type": "Карточки товара",
+    "title": "Часы Casio — WB, понятный дизайн",
+    "image": "portfolio/casio-wb.jpg",
+    "placeholder": "WB"
+  },
+  {
+    "type": "Упаковка VK",
+    "title": "Сообщество малого бизнеса",
+    "image": "portfolio/vk-business.jpg",
+    "placeholder": "VK"
+  },
+  {
+    "type": "Рекламный пост",
+    "title": "Инсайдер скидок — заметность без агрессии",
+    "image": "portfolio/ad-post.jpg",
+    "placeholder": "AD"
+  },
+  {
+    "type": "Карусель",
+    "title": "Visual Upgrade — до и после",
+    "image": "portfolio/carousel-upgrade.jpg",
+    "placeholder": "UP"
+  }
+]
