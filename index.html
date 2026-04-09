@@ -165,32 +165,30 @@ section { padding: 100px 5vw; }
 .portfolio { background: var(--card); }
 .portfolio-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; }
 
-/* Карточка портфолио */
+/* Карточка портфолио — высота подстраивается под изображение */
 .p-card {
   background: var(--bg);
   border: 1px solid var(--border);
-  aspect-ratio: 4/5;
-  display: flex; flex-direction: column; justify-content: flex-end;
-  padding: 20px; position: relative; overflow: hidden;
+  display: flex; flex-direction: column;
+  position: relative; overflow: hidden;
   cursor: pointer; transition: border-color 0.3s;
 }
 .p-card:hover { border-color: var(--border-hover); }
 .p-card:hover .p-overlay { opacity: 1; }
-.p-overlay { position: absolute; inset: 0; background: rgba(255,31,0,0.04); opacity: 0; transition: opacity 0.3s; }
+.p-overlay { position: absolute; inset: 0; background: rgba(255,31,0,0.04); opacity: 0; transition: opacity 0.3s; pointer-events: none; }
 
-/* Зона для картинки */
-.p-img-wrap { position: absolute; inset: 0; overflow: hidden; }
+/* Зона для картинки — полная ширина, высота по содержимому */
+.p-img-wrap { width: 100%; line-height: 0; overflow: hidden; }
 .p-img-wrap img {
-  width: 100%; height: 100%;
-  object-fit: cover;
+  width: 100%; height: auto;
   display: block;
   transition: transform 0.4s ease;
 }
-.p-card:hover .p-img-wrap img { transform: scale(1.03); }
+.p-card:hover .p-img-wrap img { transform: scale(1.02); }
 
-/* Плейсхолдер — показывается пока нет картинки */
+/* Плейсхолдер — фиксированная высота когда нет картинки */
 .p-placeholder {
-  position: absolute; inset: 0;
+  width: 100%; height: 240px;
   display: flex; align-items: center; justify-content: center;
   background: var(--bg);
 }
@@ -202,14 +200,12 @@ section { padding: 100px 5vw; }
   user-select: none;
 }
 
-/* Подпись поверх картинки */
+/* Подпись под изображением */
 .p-label {
+  padding: 12px 14px;
+  background: var(--card);
+  border-top: 1px solid var(--border);
   position: relative; z-index: 2;
-  background: rgba(245,245,245,0.92);
-  backdrop-filter: blur(6px);
-  padding: 10px 12px;
-  margin: -20px;
-  margin-top: auto;
 }
 .p-type { font-size: 10px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); margin-bottom: 4px; }
 .p-title { font-size: 13px; font-weight: 600; color: var(--text-main); line-height: 1.3; }
