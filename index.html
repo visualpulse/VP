@@ -31,7 +31,7 @@
   --accent-soft:   rgba(255,31,0,0.06);
   --accent-soft-b: rgba(255,31,0,0.18);
   --text-main:     #101010;
-  --text-sec:      #DADADA;
+  --text-sec:      #888888;
   --card:          #FFFFFF;
   --border:        rgba(16,16,16,0.08);
   --border-hover:  rgba(255,31,0,0.35);
@@ -90,15 +90,12 @@ nav {
 .hero-label::before { content: ''; display: block; width: 32px; height: 1px; background: var(--accent); }
 .hero-title { font-family: var(--font-display); font-size: clamp(72px, 12vw, 160px); line-height: 0.9; letter-spacing: 0.02em; color: var(--text-main); margin-bottom: 28px; }
 .hero-title span { color: var(--accent); }
-.hero-sub { font-size: 17px; font-weight: 300; color: var(--text-sec); max-width: 520px; line-height: 1.7; margin-bottom: 48px; }
-.hero-nav-btns { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 36px; }
-.hero-nav-btns a { font-family: var(--font-body); font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; padding: 9px 18px; border: 1px solid var(--border); color: var(--text-sec); background: var(--card); transition: all 0.2s; white-space: nowrap; }
-.hero-nav-btns a:hover { border-color: var(--accent); color: var(--text-main); }
+.hero-sub { font-size: 17px; font-weight: 400; color: var(--text-main); max-width: 520px; line-height: 1.7; margin-bottom: 48px; opacity: 0.6; }
 .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
 .btn-primary { background: var(--accent); color: #fff; font-family: var(--font-body); font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; padding: 14px 32px; display: inline-block; transition: background 0.2s, transform 0.15s; }
 .btn-primary:hover { background: var(--accent-dim); transform: translateY(-1px); }
-.btn-outline { border: 1px solid var(--border); color: var(--text-sec); font-family: var(--font-body); font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; padding: 14px 32px; display: inline-block; transition: border-color 0.2s, color 0.2s; }
-.btn-outline:hover { border-color: var(--accent); color: var(--text-main); }
+.btn-outline { border: 1.5px solid var(--text-main); color: var(--text-main); font-family: var(--font-body); font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; text-decoration: none; padding: 14px 32px; display: inline-block; transition: border-color 0.2s, color 0.2s, background 0.2s; }
+.btn-outline:hover { border-color: var(--accent); color: var(--accent); }
 .hero-scroll { position: absolute; bottom: 32px; right: 5vw; display: flex; flex-direction: column; align-items: center; gap: 8px; color: var(--text-sec); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; z-index: 2; }
 .hero-scroll-line { width: 1px; height: 48px; background: linear-gradient(to bottom, var(--accent), transparent); animation: scrollLine 2s ease-in-out infinite; }
 @keyframes scrollLine { 0%, 100% { opacity: 0.3; transform: scaleY(0.6); } 50% { opacity: 1; transform: scaleY(1); } }
@@ -113,25 +110,25 @@ section { padding: 100px 5vw; }
 /* ABOUT */
 .about { background: var(--card); }
 .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
-.about-text { font-size: 15px; font-weight: 300; color: var(--text-sec); line-height: 1.8; margin-bottom: 20px; }
+.about-text { font-size: 15px; font-weight: 400; color: var(--text-sec); line-height: 1.8; margin-bottom: 20px; }
 .about-text strong { color: var(--text-main); font-weight: 600; }
-.about-quote { border-left: 2px solid var(--accent); padding-left: 20px; font-size: 16px; font-style: italic; color: var(--text-sec); line-height: 1.7; margin-top: 28px; }
+.about-quote { border-left: 2px solid var(--accent); padding-left: 20px; font-size: 15px; font-style: italic; color: var(--text-main); line-height: 1.7; margin-top: 28px; opacity: 0.7; }
 .about-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
 .stat { background: var(--bg); border: 1px solid var(--border); padding: 28px 24px; transition: border-color 0.3s; }
 .stat:hover { border-color: var(--border-hover); }
 .stat-num { font-family: var(--font-display); font-size: 52px; line-height: 1; color: var(--accent); margin-bottom: 6px; }
-.stat-label { font-size: 12px; font-weight: 500; color: var(--text-sec); letter-spacing: 0.05em; text-transform: uppercase; }
+.stat-label { font-size: 12px; font-weight: 600; color: var(--text-main); letter-spacing: 0.05em; text-transform: uppercase; opacity: 0.55; }
 .about-platforms { margin-top: 2px; grid-column: span 2; background: var(--bg); border: 1px solid var(--border); padding: 20px 24px; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
 .platform-label { font-size: 11px; color: var(--text-sec); margin-right: 4px; }
-.platform-tag { font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-sec); padding: 6px 14px; border: 1px solid var(--border); transition: all 0.2s; }
-.platform-tag:hover { border-color: var(--accent); color: var(--text-main); }
+.platform-tag { font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-main); padding: 6px 14px; border: 1px solid rgba(16,16,16,0.2); transition: all 0.2s; }
+.platform-tag:hover { border-color: var(--accent); color: var(--accent); }
 
 /* SERVICES */
 .services { background: var(--bg); }
 .services-intro { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-bottom: 40px; }
 .services-desc { font-size: 15px; font-weight: 300; color: var(--text-sec); line-height: 1.8; }
 .services-desc strong { color: var(--text-main); font-weight: 600; }
-.services-note { font-size: 13px; color: var(--text-sec); line-height: 1.7; border-left: 1px solid var(--border); padding-left: 20px; align-self: center; }
+.services-note { font-size: 13px; color: var(--text-main); opacity: 0.6; line-height: 1.7; border-left: 2px solid var(--accent); padding-left: 20px; align-self: center; }
 .services-tabs { display: flex; gap: 2px; margin-bottom: 2px; flex-wrap: wrap; }
 .tab-btn { background: var(--card); border: 1px solid var(--border); color: var(--text-sec); font-family: var(--font-body); font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 12px 24px; cursor: pointer; transition: all 0.2s; }
 .tab-btn:hover { color: var(--text-main); border-color: var(--border-hover); }
@@ -144,7 +141,7 @@ section { padding: 100px 5vw; }
 .service-icon { width: 32px; height: 32px; border: 1.5px solid var(--accent); margin-bottom: 16px; display: flex; align-items: center; justify-content: center; }
 .service-name { font-size: 14px; font-weight: 600; color: var(--text-main); margin-bottom: 6px; }
 .service-price { font-family: var(--font-display); font-size: 22px; letter-spacing: 0.05em; color: var(--accent); margin-bottom: 8px; }
-.service-desc { font-size: 12px; color: var(--text-sec); line-height: 1.6; }
+.service-desc { font-size: 13px; color: var(--text-main); opacity: 0.55; line-height: 1.6; }
 .packages-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 2px; margin-top: 2px; }
 .package-card { background: var(--card); border: 1px solid var(--border); padding: 32px 28px; position: relative; transition: border-color 0.3s; }
 .package-card:hover { border-color: var(--border-hover); }
@@ -230,7 +227,7 @@ section { padding: 100px 5vw; }
 .rule-card:hover { border-color: var(--border-hover); }
 .rule-num { font-family: var(--font-display); font-size: 48px; color: rgba(255,31,0,0.15); line-height: 1; margin-bottom: 12px; }
 .rule-title { font-size: 14px; font-weight: 600; color: var(--text-main); margin-bottom: 8px; }
-.rule-text { font-size: 13px; color: var(--text-sec); line-height: 1.7; }
+.rule-text { font-size: 13px; color: var(--text-main); opacity: 0.6; line-height: 1.7; }
 
 /* FORMATS */
 .formats { background: var(--card); }
@@ -239,17 +236,17 @@ section { padding: 100px 5vw; }
 .format-card:hover { border-color: var(--border-hover); transform: translateY(-3px); }
 .format-num { font-size: 10px; font-weight: 700; letter-spacing: 0.15em; color: var(--accent); margin-bottom: 16px; }
 .format-name { font-family: var(--font-display); font-size: 32px; letter-spacing: 0.05em; color: var(--text-main); margin-bottom: 12px; }
-.format-desc { font-size: 13px; color: var(--text-sec); line-height: 1.7; }
+.format-desc { font-size: 13px; color: var(--text-main); opacity: 0.6; line-height: 1.7; }
 
 /* CONTACT */
 .contact { background: var(--bg); text-align: center; }
-.contact-tagline { font-size: 15px; font-weight: 300; color: var(--text-sec); max-width: 480px; margin: 0 auto 48px; line-height: 1.7; }
+.contact-tagline { font-size: 15px; font-weight: 400; color: var(--text-main); opacity: 0.6; max-width: 480px; margin: 0 auto 48px; line-height: 1.7; }
 .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2px; max-width: 700px; margin: 0 auto; }
 .contact-card { background: var(--card); border: 1px solid var(--border); padding: 28px 20px; text-decoration: none; display: block; transition: border-color 0.3s, transform 0.2s; }
 .contact-card:hover { border-color: var(--accent); transform: translateY(-2px); }
 .contact-platform { font-size: 10px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); margin-bottom: 8px; }
 .contact-handle { font-size: 15px; font-weight: 500; color: var(--text-main); margin-bottom: 4px; }
-.contact-note { font-size: 12px; color: var(--text-sec); }
+.contact-note { font-size: 12px; color: var(--text-main); opacity: 0.55; }
 
 /* FOOTER */
 footer { background: var(--bg); border-top: 1px solid var(--border); padding: 32px 5vw; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
@@ -321,13 +318,6 @@ footer { background: var(--bg); border-top: 1px solid var(--border); padding: 32
     <div class="hero-label">Студия графического дизайна</div>
     <h1 class="hero-title">VISUAL<br><span>PULSE</span></h1>
     <p class="hero-sub">Дизайн, который не просто выглядит — а помогает принимать решения. Telegram, VK, e-commerce.</p>
-    <div class="hero-nav-btns">
-      <a href="#about">О студии</a>
-      <a href="#services">Услуги</a>
-      <a href="#portfolio">Работы</a>
-      <a href="#formats">Форматы</a>
-      <a href="#contact">Контакт</a>
-    </div>
     <div class="hero-actions">
       <a href="#services" class="btn-primary">Смотреть услуги</a>
       <a href="#portfolio" class="btn-outline">Портфолио</a>
@@ -378,7 +368,7 @@ footer { background: var(--bg); border-top: 1px solid var(--border); padding: 32
   </div>
   <div class="services-tabs fade-up">
     <button class="tab-btn active" onclick="switchTab('razovye', this)">Разовые</button>
-    <button class="tab-btn" onclick="switchTab('kompleksy', this)">Комплексы</button>
+    <button class="tab-btn" onclick="switchTab('kompleksy', this)">Комплекты</button>
     <button class="tab-btn" onclick="switchTab('vedenie', this)">Ведение</button>
     <button class="tab-btn" onclick="switchTab('dop', this)">Дополнительно</button>
   </div>
@@ -396,21 +386,21 @@ footer { background: var(--bg); border-top: 1px solid var(--border); padding: 32
 
   <div id="kompleksy" class="tab-content">
     <div class="packages-grid">
-      <div class="package-card"><div class="package-platform">Telegram</div><div class="package-name">БАЗОВЫЙ</div><div class="package-price">2 500 <span>₽</span></div><div class="package-old">было 1 300 ₽</div><ul class="package-items"><li>Аватарка</li><li>Описание канала</li><li>Ознакомительный пост</li></ul></div>
-      <div class="package-card featured"><div class="package-badge">Популярный</div><div class="package-platform">Telegram</div><div class="package-name">ПРОДВИНУТЫЙ</div><div class="package-price">5 000 <span>₽</span></div><div class="package-old">было 3 200 ₽</div><ul class="package-items"><li>Аватарка</li><li>Описание канала</li><li>Ознакомительный пост</li><li>2 рекламных поста</li><li>Навигация</li></ul></div>
-      <div class="package-card"><div class="package-platform">Telegram</div><div class="package-name">РАСШИРЕННЫЙ</div><div class="package-price">8 000 <span>₽</span></div><div class="package-old">было 5 300 ₽</div><ul class="package-items"><li>Всё из продвинутого</li><li>3 рекламных поста</li><li>Стилизация постов</li><li>Эмодзи (5 шт.)</li></ul></div>
-      <div class="package-card"><div class="package-platform">VK</div><div class="package-name">БАЗОВЫЙ</div><div class="package-price">3 200 <span>₽</span></div><div class="package-old">было 1 900 ₽</div><ul class="package-items"><li>Аватарка</li><li>Десктопная обложка</li><li>Мобильная обложка</li><li>3 плашки меню</li></ul></div>
-      <div class="package-card featured"><div class="package-badge">Популярный</div><div class="package-platform">VK</div><div class="package-name">РАСШИРЕННЫЙ</div><div class="package-price">6 500 <span>₽</span></div><div class="package-old">было 4 300 ₽</div><ul class="package-items"><li>Всё из базового</li><li>3 обложки товаров</li><li>3 обложки виджетов</li></ul></div>
-      <div class="package-card"><div class="package-platform">VK</div><div class="package-name">ПРОДВИНУТЫЙ</div><div class="package-price">9 500 <span>₽</span></div><div class="package-old">было 6 700 ₽</div><ul class="package-items"><li>5 плашек меню</li><li>5 обложек товаров</li><li>5 обложек виджетов</li><li>Дизайн закрепа</li></ul></div>
+      <div class="package-card"><div class="package-platform">Telegram</div><div class="package-name">БАЗОВЫЙ</div><div class="package-price">2 500 <span>₽</span></div><ul class="package-items"><li>Аватарка</li><li>Описание канала</li><li>Ознакомительный пост</li></ul></div>
+      <div class="package-card featured"><div class="package-badge">Популярный</div><div class="package-platform">Telegram</div><div class="package-name">ПРОДВИНУТЫЙ</div><div class="package-price">5 000 <span>₽</span></div><ul class="package-items"><li>Аватарка</li><li>Описание канала</li><li>Ознакомительный пост</li><li>2 рекламных поста</li><li>Навигация</li></ul></div>
+      <div class="package-card"><div class="package-platform">Telegram</div><div class="package-name">РАСШИРЕННЫЙ</div><div class="package-price">8 000 <span>₽</span></div><ul class="package-items"><li>Всё из продвинутого</li><li>3 рекламных поста</li><li>Стилизация постов</li><li>Эмодзи (5 шт.)</li></ul></div>
+      <div class="package-card"><div class="package-platform">VK</div><div class="package-name">БАЗОВЫЙ</div><div class="package-price">3 200 <span>₽</span></div><ul class="package-items"><li>Аватарка</li><li>Десктопная обложка</li><li>Мобильная обложка</li><li>3 плашки меню</li></ul></div>
+      <div class="package-card featured"><div class="package-badge">Популярный</div><div class="package-platform">VK</div><div class="package-name">РАСШИРЕННЫЙ</div><div class="package-price">6 500 <span>₽</span></div><ul class="package-items"><li>Всё из базового</li><li>3 обложки товаров</li><li>3 обложки виджетов</li></ul></div>
+      <div class="package-card"><div class="package-platform">VK</div><div class="package-name">ПРОДВИНУТЫЙ</div><div class="package-price">9 500 <span>₽</span></div><ul class="package-items"><li>5 плашек меню</li><li>5 обложек товаров</li><li>5 обложек виджетов</li><li>Дизайн закрепа</li></ul></div>
     </div>
     <div class="packages-note">Индивидуальный комплект — разрабатывается под конкретные задачи. Стоимость обсуждается отдельно.</div>
   </div>
 
   <div id="vedenie" class="tab-content">
     <div class="packages-grid">
-      <div class="package-card"><div class="package-platform">Подписка</div><div class="package-name">БАЗОВЫЙ</div><div class="package-price">8 000 <span>₽/мес</span></div><div class="package-old">&nbsp;</div><ul class="package-items"><li>8 оформленных постов</li><li>Единый стиль</li><li>2 правки в месяц</li><li>Сдача по графику</li></ul></div>
-      <div class="package-card featured"><div class="package-badge">Популярный</div><div class="package-platform">Подписка</div><div class="package-name">СТАНДАРТ</div><div class="package-price">13 000 <span>₽/мес</span></div><div class="package-old">&nbsp;</div><ul class="package-items"><li>16 постов</li><li>Контент-план на месяц</li><li>Единый стиль</li><li>4 правки в месяц</li><li>Приоритетная связь</li></ul></div>
-      <div class="package-card"><div class="package-platform">Подписка</div><div class="package-name">РАСШИРЕННЫЙ</div><div class="package-price">20 000 <span>₽/мес</span></div><div class="package-old">&nbsp;</div><ul class="package-items"><li>20+ постов</li><li>Контент-план</li><li>Сторис и баннеры</li><li>Безлимитные правки</li><li>Еженедельный отчёт</li></ul></div>
+      <div class="package-card"><div class="package-platform">Подписка</div><div class="package-name">БАЗОВЫЙ</div><div class="package-price">8 000 <span>₽/мес</span></div><ul class="package-items"><li>8 оформленных постов</li><li>Единый стиль</li><li>2 правки в месяц</li><li>Сдача по графику</li></ul></div>
+      <div class="package-card featured"><div class="package-badge">Популярный</div><div class="package-platform">Подписка</div><div class="package-name">СТАНДАРТ</div><div class="package-price">13 000 <span>₽/мес</span></div><ul class="package-items"><li>16 постов</li><li>Контент-план на месяц</li><li>Единый стиль</li><li>4 правки в месяц</li><li>Приоритетная связь</li></ul></div>
+      <div class="package-card"><div class="package-platform">Подписка</div><div class="package-name">РАСШИРЕННЫЙ</div><div class="package-price">20 000 <span>₽/мес</span></div><ul class="package-items"><li>20+ постов</li><li>Контент-план</li><li>Сторис и баннеры</li><li>Безлимитные правки</li><li>Еженедельный отчёт</li></ul></div>
     </div>
     <div class="packages-note">Оплата — предоплата 100% в начале месяца. Отказ от подписки — уведомление за 7 дней.</div>
   </div>
@@ -451,9 +441,9 @@ footer { background: var(--bg); border-top: 1px solid var(--border); padding: 32
   <div class="section-label">Форматы</div>
   <h2 class="section-title">ФОРМАТЫ<br><span>СОТРУДНИЧЕСТВА</span></h2>
   <div class="formats-grid fade-up">
-    <div class="format-card"><div class="format-num">01 / РАЗОВЫЙ</div><div class="format-name">РАЗО-<br>ВЫЙ</div><div class="format-desc">Конкретная задача — конкретный результат. Сделали, сдали, разошлись.</div></div>
-    <div class="format-card"><div class="format-num">02 / КРАТКОСРОЧНЫЙ</div><div class="format-name">КРАТ-<br>КИЙ</div><div class="format-desc">Несколько задач в рамках одного проекта. Чёткие рамки без долгосрочных обязательств.</div></div>
-    <div class="format-card"><div class="format-num">03 / ДОЛГОСРОЧНЫЙ</div><div class="format-name">ПАРТ-<br>НЁР</div><div class="format-desc">Постоянное сотрудничество — подписка, регулярные задачи. Единый стиль на дистанции.</div></div>
+    <div class="format-card"><div class="format-num">01 / РАЗОВЫЙ</div><div class="format-name">РАЗОВЫЙ</div><div class="format-desc">Конкретная задача — конкретный результат. Сделали, сдали, разошлись.</div></div>
+    <div class="format-card"><div class="format-num">02 / КРАТКОСРОЧНЫЙ</div><div class="format-name">КРАТКИЙ</div><div class="format-desc">Несколько задач в рамках одного проекта. Чёткие рамки без долгосрочных обязательств.</div></div>
+    <div class="format-card"><div class="format-num">03 / ДОЛГОСРОЧНЫЙ</div><div class="format-name">ПАРТНЁР</div><div class="format-desc">Постоянное сотрудничество — подписка, регулярные задачи. Единый стиль на дистанции.</div></div>
   </div>
 </section>
 
