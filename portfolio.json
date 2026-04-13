@@ -24,15 +24,33 @@
     "placeholder": "WB"
   },
   {
-    "type": "Рекламный пост",
-    "title": "Инсайдер скидок — заметность без агрессии",
-    "image": "portfolio/ad-post.jpg",
-    "placeholder": "AD"
+    "type": "Карточка товара",
+    "title": "Наручные часы - Casio",
+    "image": "portfolio/ch.png",
+    "placeholder": "WB"
   },
   {
-    "type": "Карусель",
-    "title": "Visual Upgrade — до и после",
-    "image": "portfolio/carousel-upgrade.jpg",
-    "placeholder": "UP"
-  }
+    "type": "Карточка товара",
+    "title": "Наручные часы - Casio",
+    "image": "portfolio/ch1.png",
+    "placeholder": "WB"
+  },
+  {
+    "type": "Карточка товара",
+    "title": "Наручные часы - Casio",
+    "image": "portfolio/ch2.png",
+    "placeholder": "WB"
+  },
+  {
+    "type": "Карточка товара",
+    "title": "Наручные часы - Casio",
+    "image": "portfolio/ch3.png",
+    "placeholder": "WB"
+  },
+  {
+    "type": "Карточка товара",
+    "title": "Наручные часы - Casio",
+    "image": "portfolio/ch4.png",
+    "placeholder": "WB"
+  },
 ]
