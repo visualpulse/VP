@@ -18,10 +18,10 @@
     "placeholder": "ATL"
   },
   {
-    "type": "Упаковка VK",
-    "title": "Сообщество малого бизнеса",
-    "image": "portfolio/vk-business.jpg",
-    "placeholder": "VK"
+    "type": "Карточка товара",
+    "title": "Кружка с принтом",
+    "image": "portfolio/kru.png",
+    "placeholder": "WB"
   },
   {
     "type": "Рекламный пост",
