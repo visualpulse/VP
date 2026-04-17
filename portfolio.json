@@ -52,5 +52,23 @@
     "title": "Наручные часы - Casio",
     "image": "portfolio/ch4.png",
     "placeholder": "WB"
+  },
+  {
+    "type": "Оформление постов",
+    "title": "Баннер для поста",
+    "image": "portfolio/ban1.png",
+    "placeholder": "Telegram, VK"
+  },
+  {
+    "type": "Оформление постов",
+    "title": "Баннер для поста",
+    "image": "portfolio/ban2.png",
+    "placeholder": "Telegram, VK"
+  },
+  {
+    "type": "Оформление постов",
+    "title": "Баннер для поста",
+    "image": "portfolio/ban3.png",
+    "placeholder": "Telegram, VK"
   }
 ]
