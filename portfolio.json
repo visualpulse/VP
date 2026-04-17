@@ -70,5 +70,23 @@
     "title": "Баннер для поста",
     "image": "portfolio/ban3.png",
     "placeholder": "Telegram, VK"
+  },
+  {
+    "type": "Оформление VK",
+    "title": "Аватарка, баннер, мобильная версия баннера",
+    "image": "portfolio/vk1.png",
+    "placeholder": "VK"
+  },
+  {
+    "type": "Оформление VK",
+    "title": "Аватарка, баннер, мобильная версия баннера",
+    "image": "portfolio/vk2.png",
+    "placeholder": "VK"
+  },
+  {
+    "type": "Оформление VK",
+    "title": "Аватарка, баннер, мобильная версия баннера",
+    "image": "portfolio/vk3.png",
+    "placeholder": "VK"
   }
 ]
